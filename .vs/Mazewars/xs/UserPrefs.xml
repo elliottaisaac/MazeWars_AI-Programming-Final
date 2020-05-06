@@ -1,13 +1,20 @@
 ﻿<Properties StartupConfiguration="{6A174278-4F8A-AB7F-1BF2-59D1D1B3CA2F}|Unit Tests">
-  <MonoDevelop.Ide.Workbench ActiveDocument="../textbook/Chapter02/Assets/Scripts/AdvancedFSM/NPCTankController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../textbook/Chapter02/Assets/Scripts/SimpleFSM/SimpleFSM.cs">
     <Files>
-      <File FileName="Assets/Scripts/Maze.cs" Line="37" Column="48" />
-      <File FileName="Assets/Scripts/MazeBlock.cs" Line="24" Column="10" />
-      <File FileName="Assets/Scripts/PlayerTankController.cs" Line="105" Column="40" />
-      <File FileName="Assets/Scripts/Bullet.cs" Line="48" Column="1" />
-      <File FileName="Assets/Scripts/AutoDestruct.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/GameManager.cs" Line="12" Column="43" />
-      <File FileName="../textbook/Chapter02/Assets/Scripts/AdvancedFSM/NPCTankController.cs" Line="124" Column="1" />
+      <File FileName="Assets/Scripts/Maze.cs" Line="43" Column="48" />
+      <File FileName="Assets/Scripts/MazeBlock.cs" Line="67" Column="38" />
+      <File FileName="Assets/Scripts/PlayerTankController.cs" Line="4" Column="14" />
+      <File FileName="Assets/Scripts/Bullet.cs" Line="19" Column="6" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="20" Column="2" />
+      <File FileName="Assets/Scripts/GridManager.cs" Line="91" Column="44" />
+      <File FileName="Assets/Scripts/AStar.cs" Line="113" Column="1" />
+      <File FileName="Assets/Scripts/Node.cs" Line="22" Column="32" />
+      <File FileName="Assets/Scripts/FSM.cs" Line="6" Column="41" />
+      <File FileName="Assets/Scripts/FiniteStateMachine.cs" Line="124" Column="48" />
+      <File FileName="Assets/Scripts/EnemyTank.cs" Line="54" Column="81" />
+      <File FileName="../textbook/Chapter06/Assets/Scripts/PathFollowing/VehicleFollowing.cs" Line="9" Column="4" />
+      <File FileName="../textbook/Chapter02/Assets/Scripts/AdvancedFSM/NPCTankController.cs" Line="1" Column="1" />
+      <File FileName="../textbook/Chapter02/Assets/Scripts/SimpleFSM/SimpleFSM.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,7 +23,7 @@
             <Node name="Assembly-CSharp" expanded="True">
               <Node name="Assets" expanded="True">
                 <Node name="Scripts" expanded="True">
-                  <Node name="PlayerTankController.cs" selected="True" />
+                  <Node name="FiniteStateMachine.cs" selected="True" />
                 </Node>
               </Node>
             </Node>

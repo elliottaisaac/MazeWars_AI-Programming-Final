@@ -26,7 +26,7 @@ public class Bullet : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Player" || (collision.gameObject.tag == "Tank"))
+        if ((collision.gameObject.tag == "Player" || (collision.gameObject.tag == "Tank"))) 
         {
             collision.gameObject.GetComponent<Renderer>().material.color = Color.black;
             collision.gameObject.transform.GetChild(0).GetComponent<Renderer>().material.color = Color.black;

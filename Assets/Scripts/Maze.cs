@@ -13,7 +13,7 @@ public class Maze : MonoBehaviour
     public GameObject leftEdge;
 
 
-    void Start()
+    void Awake()
     {
         BuildMaze(this.MazeSizeX, this.MazeSizeY);
         SetFloorSize();
@@ -34,13 +34,13 @@ public class Maze : MonoBehaviour
         for (int i = 1; i < (MazeSizeX * MazeSizeY); i++)
 		{
             bool t;
-            if (Random.Range(0.0f, 10.0f) > 9.25f) t = true; else t = false;
+            if (Random.Range(0.0f, 10.0f) > 9.33f) t = true; else t = false;
             bool r;
-            if (Random.Range(0.0f, 10.0f) > 9.25f) r = true; else r = false;
+            if (Random.Range(0.0f, 10.0f) > 9.33f) r = true; else r = false;
             bool b;
-            if (Random.Range(0.0f, 10.0f) > 9.25f) b = true; else b = false;
+            if (Random.Range(0.0f, 10.0f) > 9.33f) b = true; else b = false;
             bool l;
-            if (Random.Range(0.0f, 10.0f) > 9.25f) l = true; else l = false;
+            if (Random.Range(0.0f, 10.0f) > 9.33f) l = true; else l = false;
 
             cells[i] = NewBlock(i, t, r, b, l, (i % MazeSizeY) * 10, (i / MazeSizeX) * 10);
             cells[i].name = "Cell" + i;
@@ -60,7 +60,7 @@ public class Maze : MonoBehaviour
     void AddMazeEdges()
     {
         topEdge = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        topEdge.transform.localScale += new Vector3(0, 9, 260);
+        topEdge.transform.localScale += new Vector3(1, 9, 260);
         topEdge.transform.position = new Vector3(120.0f, 0.0f, 269.0f);
         topEdge.transform.Rotate(0, 90.0f, 0, Space.Self);
         topEdge.GetComponent<Renderer>().material.color = Color.white;
@@ -70,7 +70,7 @@ public class Maze : MonoBehaviour
         Instantiate(topEdge);
 
         rightEdge = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        rightEdge.transform.localScale += new Vector3(0, 9, 273);
+        rightEdge.transform.localScale += new Vector3(1, 9, 273);
         rightEdge.transform.position = new Vector3(250.0f, 0.0f, 132.0f);
         rightEdge.GetComponent<Renderer>().material.color = Color.white;
         coll = rightEdge.GetComponent<Collider>();
@@ -79,7 +79,7 @@ public class Maze : MonoBehaviour
         Instantiate(rightEdge);
 
         botEdge = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        botEdge.transform.localScale += new Vector3(0, 9, 260);
+        botEdge.transform.localScale += new Vector3(1, 9, 260);
         botEdge.transform.position = new Vector3(120.0f, 0.0f, -5.0f);
         botEdge.transform.Rotate(0, 90.0f, 0, Space.Self);
         botEdge.GetComponent<Renderer>().material.color = Color.white;
@@ -89,7 +89,7 @@ public class Maze : MonoBehaviour
         Instantiate(botEdge);
 
         leftEdge = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        leftEdge.transform.localScale += new Vector3(0, 9, 273);
+        leftEdge.transform.localScale += new Vector3(1, 9, 273);
         leftEdge.transform.position = new Vector3(-10.0f, 0.0f, 132.0f);
         leftEdge.GetComponent<Renderer>().material.color = Color.white;
         coll = leftEdge.GetComponent<Collider>();

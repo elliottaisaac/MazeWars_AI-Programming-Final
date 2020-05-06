@@ -13,16 +13,10 @@ public class PlayerTankController : MonoBehaviour
     private float maxBackwardSpeed = -15.0f;
     private int loadedBullets = 5;
 
-    //Bullet shooting rate
-    protected float shootRate;
-    protected float elapsedTime;
-
     void Start()
     {
-        //Tank Settings
         rotSpeed = 80.0f;
 
-        //Get the turret of the tank
         Turret = gameObject.transform.GetChild(0).transform;
         bulletSpawnPoint = Turret.GetChild(0).transform;
     }
@@ -92,10 +86,10 @@ public class PlayerTankController : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && loadedBullets > 0)
         {
-            if (elapsedTime >= shootRate)
-            {
+            //if (elapsedTime >= shootRate)
+            //{
                 //Reset the time
-                elapsedTime = 0.0f;
+                //elapsedTime = 0.0f;
 
                 //Also Instantiate over the PhotonNetwork
                 Instantiate(Bullet, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
@@ -103,7 +97,7 @@ public class PlayerTankController : MonoBehaviour
                 loadedBullets--;
 
                 if(loadedBullets == 0) StartCoroutine(ReloadGun());
-            }
+           // }
         }
     }
 

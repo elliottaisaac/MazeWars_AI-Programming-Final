@@ -55,12 +55,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\AutoDestruct.cs" />
+     <Compile Include="Assets\Scripts\AStar.cs" />
      <Compile Include="Assets\Scripts\Bullet.cs" />
+     <Compile Include="Assets\Scripts\EnemyTank.cs" />
+     <Compile Include="Assets\Scripts\FSM.cs" />
+     <Compile Include="Assets\Scripts\FiniteStateMachine.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\GridManager.cs" />
      <Compile Include="Assets\Scripts\Maze.cs" />
      <Compile Include="Assets\Scripts\MazeBlock.cs" />
+     <Compile Include="Assets\Scripts\Node.cs" />
      <Compile Include="Assets\Scripts\PlayerTankController.cs" />
+     <Compile Include="Assets\Scripts\PriorityQueue.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/elliottisaac/Desktop/AI/Mazewars/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
